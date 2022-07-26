@@ -17,11 +17,22 @@ body {
   color: var(--main-txt-cl);
 }
 /*Reset styles*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /*Base styles*/
 .section-title {
@@ -32,10 +43,35 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
 /*Header section*/
 .header {
   background-color: var(--light-bg-cl);
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+/*Альтернатива gap*/
+/*.header-item {
+  margin-right: 50px;
+}
+.header-item:last-child {
+  margin-right: 0;
+}*/
 .logo-link {
   font-family: 'Raleway';
   font-weight: 700;
@@ -43,11 +79,20 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-txt-cl);
+
+  margin-right: 93px;
 }
 .logo-accent {
   color: #000000;
 }
+.header-nav {
+  margin-right: auto;
+}
 .header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
