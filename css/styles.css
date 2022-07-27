@@ -36,6 +36,8 @@ p {
 }
 /*Base styles*/
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -52,6 +54,9 @@ p {
 
   outline: 2px solid red;
   outline-offset: -2px;
+}
+img {
+  display: block;
 }
 /*Header section*/
 .header {
@@ -123,6 +128,7 @@ p {
   background-color: var(--dark-bg-cl);
 }
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -132,17 +138,27 @@ p {
   color: var(--light-bg-cl);
 }
 .hero-btm {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  margin-left: auto;
+  margin-right: auto;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  letter-spacing: 0.06em;
+
   color: var(--light-bg-cl);
   cursor: pointer;
   background-color: var(--accent-txt-cl);
 }
 /*About section*/
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -156,7 +172,12 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.about-list {
+  display: flex;
+  gap: 30px;
+}
 .about-subtitle {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -164,14 +185,33 @@ p {
   text-transform: uppercase;
   color: var(--secondary-txt-color);
 }
+.about-item {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .about-desc {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+/*Work section*/
+.work-list {
+  display: flex;
+  gap: 30px;
+}
+
 /*Team section*/
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+.team-img {
+  margin-bottom: 30px;
+}
 .team-subtitle {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -179,7 +219,10 @@ p {
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
 }
+
 .team-desc {
+  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -211,6 +254,12 @@ p {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-item {
+  margin-bottom: 9px;
+}
+.footer-item:last-child {
+  margin-bottom: 0;
 }
 .footer-addres:hover,
 .footer-addres:focus,
