@@ -15,6 +15,9 @@
 body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
+  background-color: var(--light-bg-cl);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 /*Reset styles*/
 h1,
@@ -26,15 +29,43 @@ h6,
 p {
   margin: 0;
 }
-.link {
-  text-decoration: none;
+/*Base styles*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  /* outline: 2px solid red;
+  outline-offset: -2px;*/
 }
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/*Base styles*/
+.link {
+  text-decoration: none;
+}
 .section-title {
   margin-bottom: 50px;
 
@@ -42,21 +73,7 @@ p {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
-}
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-
-  /*outline: 2px solid red;
-  outline-offset: -2px;*/
-}
-img {
-  display: block;
 }
 .visually-hidden {
   position: absolute;
@@ -99,9 +116,7 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-txt-cl);
-
   margin-right: 93px;
 }
 .logo-accent {
@@ -143,8 +158,11 @@ img {
 /*Hero section*/
 .hero {
   background-color: var(--dark-bg-cl);
+  padding: 200px 0;
 }
 .hero-title {
+  width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -155,19 +173,14 @@ img {
   color: var(--light-bg-cl);
 }
 .hero-btm {
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
-  margin-left: auto;
-  margin-right: auto;
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
+  padding: 10px 32px;
+  border: none;
   line-height: 1.88;
 
   color: var(--light-bg-cl);
@@ -185,58 +198,61 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-txt-color);
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .about-desc {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 /*Work section*/
 .work-list {
   display: flex;
   gap: 30px;
 }
+.work {
+  padding-top: 0;
+}
 
 /*Team section*/
+.team {
+  background-color: var(--gray-bg-cl);
+}
+.team-description {
+  padding: 30px 0;
+}
 .team-list {
   display: flex;
   gap: 30px;
 }
+.team-item {
+  background: #ffffff;
+  /* material shadow v1 */
 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-subtitle {
-  padding-top: 30px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
 }
-
 .team-desc {
-  padding-top: 10px;
+  margin-top: 10px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-}
-.team {
-  background-color: var(--gray-bg-cl);
 }
 /*Footer section*/
 .footer {
   background-color: var(--dark-bg-cl);
+  padding: 60px 0;
 }
 .footer-logo-link {
   margin-right: 0;
@@ -244,7 +260,7 @@ img {
 .footer-logo-accent {
   color: var(--light-bg-cl);
 }
-.footer-list {
+address {
   margin-top: 20px;
 }
 .footer-addres {
@@ -252,7 +268,6 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 .footer-mail,
@@ -279,22 +294,20 @@ img {
 }
 /*Portfolio section*/
 .project-list-btn {
+  margin-bottom: 50px;
   display: flex;
-  gap: 52px;
+  gap: 8px;
   justify-content: center;
 }
 .projects-btn {
   padding: 6px 22px;
   border-radius: 4px;
-
-  border-color: transparent;
-
+  border: none;
   background-color: var(--gray-bg-cl);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
   cursor: pointer;
 }
@@ -318,7 +331,6 @@ img {
   padding: 20px 24px;
 }
 .cards-subtitle {
-  padding-top: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -326,7 +338,7 @@ img {
   color: var(--secondary-txt-color);
 }
 .cards-desc {
-  padding-top: 4px;
+  margin-top: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
