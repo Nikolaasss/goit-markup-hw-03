@@ -91,14 +91,13 @@ button {
 /*Header section*/
 .header {
   background-color: var(--light-bg-cl);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 .header-container {
   display: flex;
   align-items: center;
-
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec;
 }
 .header-list {
   display: flex;
@@ -310,6 +309,7 @@ address {
   text-align: center;
   color: var(--secondary-txt-color);
   cursor: pointer;
+  letter-spacing: 0.03em;
 }
 .projects-btn:hover,
 .projects-btn:focus {
